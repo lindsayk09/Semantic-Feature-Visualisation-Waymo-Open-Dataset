@@ -14,9 +14,10 @@ forecasting pipelines (OccFormer, UniOcc, OccGen).
 
 | Input frame (FRONT camera) | DINOv2 PCA heatmap | Cosine similarity |
 |:--------------------------:|:------------------:|:-----------------:|
-| <img width="457" height="317" alt="image" src="https://github.com/user-attachments/assets/0ae2ba93-9ada-4c61-af8d-f7b1b0fabece" />
+| <img width="457" height="317" alt="image" src="https://github.com/user-attachments/assets/0ae2ba93-9ada-4c61-af8d-f7b1b0fabece" /> 
 
-  | *(add your output)*| *(add your output)*|
+  | <img width="452" height="331" alt="image" src="https://github.com/user-attachments/assets/c83625ac-2822-477c-9521-c323e7fbb0f1" />
+| *(add your output)*|
 
 > Same colour = same semantic class. No labels used — entirely self-supervised.
 
