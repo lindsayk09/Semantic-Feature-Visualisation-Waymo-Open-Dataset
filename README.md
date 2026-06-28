@@ -121,7 +121,7 @@ gsutil -m cp \
 ```bash
 cd src
 python dinov2_waymo.py \
-    --parquet_dir C:/Users/Lindsay/data/waymo/camera_image \
+    --parquet_dir ./data/waymo/camera_image \
     --out_dir     ../outputs \
     --camera      1 \
     --max_frames  15
