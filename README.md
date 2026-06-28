@@ -1,12 +1,44 @@
-# DINOv2 Semantic Feature Visualisation — Waymo Open Dataset v2.0.1
+# Semantic Feature Visualisation for Autonomous Driving
+### DINOv2 Vision Transformer on the Waymo Open Dataset v2.0.1
 
-Extracts and visualises patch-level semantic features from a pretrained
-**DINOv2 ViT-S/14** model on autonomous driving camera frames from the
-**Waymo Open Dataset v2.0.1**.
+---
 
-This project demonstrates foundation model feature alignment for autonomous
-driving perception — a core technique in weakly-supervised 4D occupancy
-forecasting pipelines (OccFormer, UniOcc, OccGen).
+## Overview
+
+One of the most fundamental challenges in autonomous driving perception is
+teaching a machine to understand what it sees — not just detect objects, but
+genuinely comprehend the semantic structure of a scene: which parts are road,
+which are sky, which are other vehicles, which are people.
+
+Traditional approaches solve this with supervision: you label thousands of
+images, train a model on those labels, and hope it generalises. This works,
+but it is expensive, slow, and brittle. The labels are always finite. The
+real world is not.
+
+This project takes a different direction. Instead of labelling anything, it
+asks a simpler question: **what does a model that was never trained on
+autonomous driving already understand about driving scenes?**
+
+The model in question is **DINOv2**, a Vision Transformer pretrained entirely
+through self-supervision on a curated dataset of internet images — no manual
+labels, no domain-specific fine-tuning. Yet when its internal representations
+are visualised on real Waymo driving footage, something striking emerges: the
+model has spontaneously learned to separate roads from sky from vegetation
+from vehicles, purely from the statistical structure of visual data.
+
+This project builds a lightweight pipeline to extract, project, and visualise
+these representations on three real driving segments from the Waymo Open
+Dataset v2.0.1. The pipeline was built from scratch, working directly with
+Waymo's parquet data format, handling frame extraction, DINOv2 inference,
+dimensionality reduction via PCA, and cosine similarity analysis — all
+running on a standard CPU laptop without any GPU.
+
+The results connect directly to an active research direction in autonomous
+driving: **weakly-supervised and self-supervised 4D occupancy forecasting**,
+where the goal is to predict how a scene will evolve in 3D space and time
+without relying on dense, expensive 3D annotations. Foundation models like
+DINOv2 are increasingly seen as the key to unlocking this — and this project
+is a practical, hands-on exploration of why.
 
 ---
 
