@@ -16,10 +16,14 @@ Three driving segments from the Waymo validation set were processed.
 Each image shows: **Input frame | DINOv2 PCA heatmap | Cosine similarity map**
 
 **Segment 1 — Highway / construction zone**
+
 <img width="2985" height="855" alt="segment_01" src="https://github.com/user-attachments/assets/dcd7fcf2-ac33-4c1b-b2c7-9418273c26d2" />
 
 
 **Segment 2 — Urban intersection with pedestrians**
+
+<img width="2985" height="855" alt="segment_02" src="https://github.com/user-attachments/assets/e395c9bf-b0f4-401f-be80-b4dfd6b363e6" />
+
 
 
 **Segment 3 — Residential street with vehicles**
