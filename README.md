@@ -12,9 +12,18 @@ forecasting pipelines (OccFormer, UniOcc, OccGen).
 
 ## Results
 
-| Input frame (FRONT camera) | DINOv2 PCA heatmap | Cosine similarity |
-|:--------------------------:|:------------------:|:-----------------:|
-| <img width="457" height="317" alt="image" src="https://github.com/user-attachments/assets/0ae2ba93-9ada-4c61-af8d-f7b1b0fabece" /> <img width="452" height="331" alt="image" src="https://github.com/user-attachments/assets/980a4346-35d2-4c4a-b5df-a0153260145c" />| <img width="636" height="452" alt="image" src="https://github.com/user-attachments/assets/7434acaa-bfa0-43c3-aca8-09bbbb3a766e" />
+Three driving segments from the Waymo validation set were processed.
+Each image shows: **Input frame | DINOv2 PCA heatmap | Cosine similarity map**
+
+**Segment 1 — Highway / construction zone**
+<img width="2985" height="855" alt="segment_01" src="https://github.com/user-attachments/assets/dcd7fcf2-ac33-4c1b-b2c7-9418273c26d2" />
+
+
+**Segment 2 — Urban intersection with pedestrians**
+
+
+**Segment 3 — Residential street with vehicles**
+![Segment 3](outputs/segment_03.png)
 >
 | *(add your output)*|
 
