@@ -27,9 +27,9 @@ Each image shows: **Input frame | DINOv2 PCA heatmap | Cosine similarity map**
 
 
 **Segment 3 — Residential street with vehicles**
-![Segment 3](outputs/segment_03.png)
->
-| *(add your output)*|
+
+<img width="2985" height="855" alt="segment_03" src="https://github.com/user-attachments/assets/63bde6dc-4a96-4ef1-9966-9bc6c92272c6" />
+
 
 > Same colour = same semantic class. No labels used — entirely self-supervised.
 
